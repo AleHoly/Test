@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sasitstyle.css">
+    <link rel="stylesheet" href="menu.css">
+    <title>About me</title>
+    
+</head>
+<body>
+
+<!-- Боковое меню -->
+
+
+<div id="side-menu" class="side-menu">
+    <button class="close-btn" onclick="closeMenu()">×</button>
+    <nav>
+        <ul>
+            <li><a href="#about" onclick="scrollToSection('about')">About</a></li>
+            <li><a href="#skills" onclick="scrollToSection('skills')">Skills</a></li>
+            <li><a href="#education" onclick="scrollToSection('education')">Education</a></li>
+            <li><a href="#experience" onclick="scrollToSection('experience')">Experience</a></li>
+            <li><a href="#contact" onclick="scrollToSection('contact')">Contact</a></li>
+    </nav>
+</div>
+
+
+<script src="menu.js"></script>
+
+    <header>
+          <div class="menu-btn" onclick="toggleMenu()">
+            ☰ MENU
+        </div>
+      <div class="profile-picture">
+        <img src="Untitled.png" alt="Моє Фото">
+    </div>
+    <div class="profile-info">
+        <h1>Doc. Livsi</h1>
+        <p>псевдо-Web rusher</p>
+    </div>
+    </header>
+
+
+    
+    <section id="about">
+        <h2>About</h2>
+        <h3>Ім'я:</h3> <p>Доктор Лівсі</p>
+        <h3>Посада:</h3> 
+        <p>Капітан-пірат, Лікар та Експлоратор</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <h3>Витончена картографія</h3>
+        <p>Кожна з моїх експедицій — це справжній тест на вгадку. Шифри, загадки, пастки — всі ці труднощі — моя щоденна страва. Якби тут була нагорода за розгадування карт, я був би найбагатшим мандрівником у всьому світі!
+        <h3>Лікування гарним настроєм</h3>
+        <p>Коли день стає сірий, а пригоди видаються неймовірно складними, мої сміховинні вправи завжди приносять усмішку. Лікар від пригод — це також лікар від серйозності!</p>
+        </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p>О, а що ж, давайте трошки поговоримо про мої "вищі" навчальні досягнення, агх-агх!</p>
+        <h3>Факультет карти та шифрів</h3>
+        <p>Моє поглиблене вивчення карт та шифрів було просто неабиякою пригодою! Заняття тримали мене в напрузі, але завжди були настільки захопливими, що я не помічав, як летять години. Мої професійні навички в розшифровці можуть конкурувати навіть з найкращими агентами секретних служб!</p>
+
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <h3>Капітан-пірат</h3>
+        <p>Понад 10 років керівництва командою на високих хвилях та в пошуку скарбів. Здатність взяти під контроль навігацію та робити стратегічні рішення в умовах небезпеки.</p>
+        <h3>Лікарський досвід</h3>
+        <p>Спеціалізація в екстрених ситуаціях, лікуванні поранень та підтримці команди під час екстремальних подій. Використання гумору як ефективного засобу підвищення морального духу.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="contact">
+            <i class="fa fa-envelope"></i>adskayadrochilna2004@gmail.com
+        </div>
+        <div class="contact">
+            <i class="fa fa-phone"></i> +38 (063) 333 33 33
+        </div>
+        <div class="contact">
+            <i class="fa fa-github"></i><a href="https://github.com/AleHoly" target="_blank">GitHub</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 AleHoly. Всі права захищені.</p>
+    </footer>
+
+</body>
+
+</html>

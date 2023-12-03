@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    <title>Your Name - CV</title>
+    <style> </style>
+	<link rel="stylesheet" href="sasitstyle.css">
+	<script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <img src="Untitled.png">
+        <div><h2>Oleskandr Shoto tam</h2>
+		<p>Molochansk</p></div>
+        <h2>Position</h2>
+        <ul>
+            <li>Deputy general of the space forces in</li>
+            <li>the constellation of the golden</li>
+            <li>contented cow. (far-right legion)</li>
+        </ul>
+	<h2>Light / Dark </h2>
+	<div class="toggle-btn" onclick="toggleButton()">
+        <div class="slider"></div>
+    </div>
+    </header>
+
+
+    <div id="side-menu" class="side-menu">
+        <button class="close-btn" onclick="closeMenu()">×</button>
+        <ul>
+            <li><a href="javascript:void(0);" onclick="scrollToSection('about-me')">About me</a></li>
+            <li><a href="javascript:void(0);" onclick="scrollToSection('skills')">Skills</a></li>
+            <li><a href="javascript:void(0);" onclick="scrollToSection('education')">Education</a></li>
+            <li><a href="javascript:void(0);" onclick="scrollToSection('work-experience')">Work Experience</a></li>
+            <li><a href="javascript:void(0);" onclick="scrollToSection('projects')">Projects</a></li>
+            <!-- Add more menu items as needed -->
+        </ul>
+    </div>
+
+
+<div class="main-content">
+    <section id="about-me">
+        <h2>About me</h2>
+        <ul>
+			<li>My name is Oleksandr Shoto tam</li>
+			<br>            
+			<li><b>Birthday:</b> ...</li>
+            <li><b>Email:</b> test.@gmail.com</li>
+            <li><b>Phone:</b> +666 66 66 666</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5, CSS3, JavaScript</li>
+            <li>React.js, Node.js</li>
+            <li>Responsive Web Design</li>
+            <li>Git and Version Control</li>
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p>Zaporizhia Regional Boarding Lyceum with Enhanced Military Physical Training "Defender" Municipal Institution of the Zaporizhia Regional Council</p>
+    </section>
+
+    <section id="work-experience">
+        <h2>Work Experience</h2>
+        <h3>Web Developer - Company Name</h3>
+        <p>Responsibilities and achievements...</p>
+
+        <h3>Intern - Another Company</h3>
+        <p>Responsibilities and achievements...</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <h3>Project 1 - Project Name</h3>
+        <p>Description of the project...</p>
+
+        <h3>Project 2 - Project Name</h3>
+        <p>Description of the project...</p>
+    </section>
+</div>
+</body>
+</html>

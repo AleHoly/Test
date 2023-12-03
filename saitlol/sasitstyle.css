@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #DDE6E8;
+    display: flex;
+    background-image: url('lol.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.dark-mode {
+    background-color: #000000;
+}
+
+header {
+    width: 300px;
+    background-color: rgb(62, 40, 78);
+    color: #ffffff;
+    text-align: center;
+    padding: 1em 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+}
+
+header.dark-mode{
+    background-color: #000000;
+    color:#fdfdfd;
+}
+
+.main-content {
+    background: #FFF;
+    width: 800px;}
+
+
+    
+.main-content.dark-mode {
+    background:  #24292A;
+    color:#fdfdfd;}
+
+section {
+    max-width: 663px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+section.dark-mode{
+    box-shadow: 0 0 16px rgba(255, 255, 255, 0.5);
+    background-color: #24292A;
+}
+
+h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li.close-btn {
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+li.main-content{
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+img {
+    width:250px;
+    height:250px;
+    border-radius: 50%;
+}
+.toggle-btn {
+width: 60px;
+height: 30px;
+background-color: #0d1214;
+border-radius: 15px;
+position: relative;
+cursor: pointer;
+}
+
+.slider {
+width: 30px;
+height: 30px;
+background-color: #ffffff;
+border-radius: 50%;
+position: absolute;
+top: 0;
+left: 0;
+transition: transform 0.3s ease-in-out;
+}
+
+.active {
+background-color: rgb(240, 243, 59);
+}
+
+.active .slider {
+transform: translateX(30px);
+}
+
+.menu-btn {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 50px;
+    cursor: pointer;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+
+.close-btn {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 55px;
+    cursor: pointer;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initially hide the side menu off-screen */
+    width: 300px;
+    height: 100%;
+    background-color: rgb(50, 32, 63);
+    color: #fff;
+    padding-top: 60px; /* Adjust based on your header height */
+    z-index: 2; /* Ensure the side menu is above the header */
+    transition: left 0.3s ease-in-out;
+}
+
+.side-menu.dark-mode {
+    background-color: #101414;
+    color: #fdfdfd;
+}
+
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-menu li {
+    padding: 24px;
+    cursor: pointer;
+    border-bottom: 1px solid #e25757;
+}
+
+.side-menu li:hover {
+    background-color: rgb(9, 95, 91);;
+}
+
+.side-menu.show {
+    left: 0; /* Show the side menu when the "show" class is added */
+}
+
+a {
+    color: #ffffff; /* Черный цвет для ссылок */
+    text-decoration: none; /* Убираем подчеркивание по умолчанию */
+}
+
+/* Стиль для ссылок в состоянии наведения (hover) */
+a:hover {
+    color: #ffffff; /* Темно-серый цвет при наведении */
+}
+
+/* Стиль для посещенных ссылок */
+a:visited {
+    color: #ffffff; /* Серый цвет для посещенных ссылок */
+}
